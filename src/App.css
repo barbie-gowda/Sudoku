@@ -1,0 +1,70 @@
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cell.solved {
+    background-color: #e0e0e0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error, .hint {
+    color: red;
+    margin-top: 20px;
+}
+
+.solved-grid {
+    margin-top: 20px;
+}
+
+.solved-grid .grid {
+    margin: 0;
+}
+
+.solved-grid .cell {
+    background-color: #e0e0e0;
+    border: 1px solid #ddd;
+}
